@@ -1,0 +1,64 @@
+<!DOCTYPE html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Team Testmilu · Visitekaartje · Versie A</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<!-- <link rel="stylesheet" href="styles/landing-page.css"> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/x-icon" href="assets/zon.svg">
+</head>
+
+<body>
+
+	<!-- Dit is de dynamische achtergrond -->
+	<canvas id="background"></canvas>
+
+	<!-- Landing page -->
+	<!-- <div id="landing-page">
+		<h2 class="subtitle">Team</h2>
+		<h1 class="title">TESTMILU</h1>
+		<div id="swipe-up">
+			<i class="fa fa-chevron-up"></i>
+			<h6>SWIPE UP</h6>
+		</div>
+		<div id="scroll-down">
+			<h6>SCROLL DOWN</h6>
+			<i class="fa fa-chevron-down"></i>
+		</div>
+	</div> -->
+
+	<div class="container root">
+
+		<!-- Dit is de header met logo van ons team -->
+		<header class="header">
+			<img src="../assets/logo.svg" alt="Logo team testmilu" />
+		</header>
+
+		<main class="content">
+
+			<!-- Dit is het sterrenstelsel -->
+			<div id="ovals" class="ovals">
+
+				<!-- Dit is de zon waar alle planeten om heen draaien -->
+				<div class="oval oval-sun">
+					<div class="carousel">
+						<img id="zon" src="./assets/zon.svg" alt="zon" />
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer id="root-footer" class="footer"></footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/script.js" text="type/javascript"></script>
+	<script src="scripts/background.js" text="type/javascript"></script>
+	<!-- <script src="scripts/landing-page.js" text="type/javascript"></script> -->
+</body>
+
+</html>

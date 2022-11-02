@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 360">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Naamloos_verloop_277);
+      }
+    </style>
+    <radialGradient id="Naamloos_verloop_277" data-name="Naamloos verloop 277" cx="180" cy="180" fx="314.71" fy="60.62" r="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cc9595"/>
+      <stop offset=".31" stop-color="#ca9292"/>
+      <stop offset=".49" stop-color="#c38a8a"/>
+      <stop offset=".64" stop-color="#b87b7b"/>
+      <stop offset=".78" stop-color="#a96767"/>
+      <stop offset=".9" stop-color="#954d4d"/>
+      <stop offset="1" stop-color="#803232"/>
+    </radialGradient>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <circle class="cls-1" cx="180" cy="180" r="180"/>
+  </g>
+</svg>

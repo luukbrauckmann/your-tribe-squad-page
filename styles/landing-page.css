@@ -1,0 +1,57 @@
+#landing-page {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 11;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content : center;
+	align-items: center;
+	transition: all .3s ease;
+	color: white;
+}
+
+#landing-page > h1 {
+	text-align: center;
+	margin-top: 0;
+}
+#landing-page > h2 {
+	text-align: center;
+	margin: 0;
+}
+
+#swipe-up,
+#scroll-down {
+	text-align: center;
+}
+#swipe-up > h6,
+#scroll-down > h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+#scroll-down {
+	display: none;
+}
+
+.title {
+	font-weight: bold;
+}
+.subtitle {
+	font-weight: normal;
+}
+
+
+/* Medium screen size */
+@media (min-width: 768px) {
+	#swipe-up {
+		display: none;
+	}
+	#scroll-down {
+		display: block;
+	}
+}

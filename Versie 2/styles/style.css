@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+main {
+  background-image: url('Galaxy-Background.jpg');
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.header {
+    width:100%;
+    min-height:7vh;
+    max-height: 100vh;
+    text-align: center;
+    color:rgb(105, 63, 146);
+    background-color: rgb(30, 30, 114);
+    padding: 0px;
+    margin: 0vh;
+}
+
+.neonText {
+    color: rgb(30, 30, 114);
+    text-shadow:
+      0 0 7px rgb(255, 99, 219),
+      0 0 10px rgb(255, 99, 219),
+      0 0 21px rgb(255, 99, 219),
+      0 0 42px rgb(135, 182, 239),
+      0 0 82px rgb(251, 251, 251),
+      0 0 92px rgb(253, 139, 25),
+      0 0 102px rgb(253, 139, 25),
+      0 0 151px rgb(253, 139, 25);
+  }
+
+/* Sterrenstelsel */
+
+.carousel {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50%;
+    border: 0px solid #222;
+    transform: skew(180deg);
+  }
+.ovals{
+    margin: 5em auto;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+.oval-1{
+    position: absolute;
+    top: 0;
+  }
+.oval{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 10;
+  }
+
+.oval .oval-5 {
+    z-index: 1;
+  }
+
+.oval-1 .carousel {
+    width: 840px;
+    height: 670px;
+      
+  }
+  
+.oval-2 .carousel {
+    width: 506px;
+    height: 395px;
+    transform: skew(180deg);
+  }
+  
+.oval-3 .carousel {
+    width: 360px;
+    height: 284px;
+    transform: skew(180deg);
+  }
+  
+.oval-5 .carousel {
+    width: 111px;
+    height: 85px;
+    transform: skew(180deg);
+  }
+  
+.oval .carousel .carousel__item{
+    transform: translate(-50%, -50%);
+  }
+  
+.carousel__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 
+      move-x 60s linear infinite, 
+      move-y 60s linear infinite;
+    font-size: 1.4rem;
+    transition: 0.8s ease-in-out;
+  }
+
+/* Tijdsvertraging */
+
+.carousel:nth-child {
+    animation-delay: 0s;
+  }
+
+.carousel:nth-child(1) {
+    animation-delay: 2s;
+  }
+
+.carousel:last-child {
+    animation-delay: 0s;
+  }
+
+.oval img{
+    border-radius: 50%;
+    transform: skew(-180deg);
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 4px rgb(255, 99, 219);
+    animation: glow 1.5s linear infinite alternate;
+  }
+
+  @keyframes glow{
+    to {
+      box-shadow: 0px 0px 30px 20px rgb(30, 30, 114);
+    }
+  }
+
+
+.oval img#zon {
+  transform: none;
+  background-color: none;
+  box-shadow: none;
+}
+
+.oval img:hover {
+  transform: scale(1.6);
+}
+
+@keyframes move-x {
+    0% {
+      left: 0;
+      animation-timing-function: ease-in;
+    }
+    25% {
+      left: 50%;
+      animation-timing-function: ease-out;
+    }
+    50% {
+      left: 100%;
+      animation-timing-function: ease-in;
+    }
+    75% {
+      left: 50%;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      left: 0%;
+      animation-timing-function: ease-in;
+    }
+  }
+  
+@keyframes move-y {
+    0% {
+      top: 50%;
+      animation-timing-function: ease-out;
+    }
+    25% {
+      top: 0;
+      animation-timing-function: ease-in;
+    }
+    50% {
+      top: 50%;
+      animation-timing-function: ease-out;
+    }
+    75% {
+      top: 100%;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      top: 50%;
+      animation-timing-function: ease-out;
+    }
+  }
+
+
+/* Extra large viewport */
+@media (min-width: 1920px) {
+
+    header {
+        width: 100vw;
+        height: 2vh;
+    }
+}
+
+/* Gloed achter de mugshots */
+
+.bm-white {
+  border-radius: 50%;
+  box-shadow: 1px 1px 2em 0px rgba(234, 215, 232, 0.577); 
+}
+
+/* Hover voor de titel van studenten */
+.hide {
+  display: none;
+}
+    
+.carousel__item img:hover + .hide {
+  display: block;
+  color: rgba(240, 240, 240, 0.8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  padding-top: 1.2em;
+  transition: 1s ease-in-out;
+  width: 33vw;
+}

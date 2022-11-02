@@ -1,0 +1,492 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--xs: 0;
+	--sm: 576px;
+	--md: 768px;
+	--lg: 992px;
+	--xl: 1200px;
+	--xxl: 1400px;
+
+	--spacing: .5rem;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-flow: column;
+	gap: var(--spacing);
+	height: 100%;
+}
+.container .header,
+.container .footer {
+	flex: 0 1 auto;
+}
+.container .content {
+	flex: 1 1 auto;
+}
+
+header {
+	z-index: 1;
+	padding: .5rem .5rem 0 .5rem;
+}
+
+header img {
+	width: 200px;
+}
+
+footer {
+	padding: .5rem 0 .5rem .5rem;
+	color: white;
+	z-index: 1;
+	text-align: center;
+	font-weight: 600;
+}
+
+canvas#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Sterrenstelsel */
+
+.carousel {
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50%;
+  border: 0px solid #222;
+  transform: skew(180deg);
+}
+.ovals {
+  margin: 5em auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oval-0 {
+  position: absolute;
+  top: 0;
+}
+.oval {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.oval-sun {
+  z-index: 100;
+}
+
+.oval-0 .carousel {
+  width: 25vw;
+  height: 25vh;
+}
+
+.oval-1 .carousel {
+  width: 50vw;
+  height: 50vh;
+  transform: skew(180deg);
+}
+
+.oval-2 .carousel {
+  width: 25vw;
+  height: 25vh;
+  transform: skew(180deg);
+}
+
+.oval-sun .carousel {
+  width: 4em;
+  height: 8em;
+  transform: skew(180deg);
+}
+
+.oval .carousel .carousel__item {
+  transform: translate(-50%, -50%);
+}
+
+.carousel__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move-x 60s linear infinite, move-y 60s linear infinite;
+  font-size: 1.4rem;
+  transition: 0.8s ease-in-out;
+}
+
+/* Tijdsvertraging */
+
+.carousel:nth-child {
+  animation-delay: 0s;
+}
+
+.carousel:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.carousel:last-child {
+  animation-delay: 0s;
+}
+
+.oval img {
+  border-radius: 50%;
+  transform: skew(-180deg);
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.oval img#zon {
+	transform: none;
+	background-color: none;
+	box-shadow: none;
+}
+
+.oval img:hover {
+	transform: scale(1.6);
+}
+
+.oval img:focus-visible {
+  transform: scale(1.6);
+  box-shadow: 0px 0px 1em dodgerblue;
+}
+
+
+
+@keyframes move-x {
+  0% {
+    left: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    left: 50%;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    left: 100%;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    left: 50%;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    left: 0%;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes move-y {
+  0% {
+    top: 50%;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 50%;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 100%;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 50%;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes move-y {
+	0% {
+		top: 50%;
+		animation-timing-function: ease-out;
+	}
+
+	25% {
+		top: 0;
+		animation-timing-function: ease-in;
+	}
+
+	50% {
+		top: 50%;
+		animation-timing-function: ease-out;
+	}
+
+	75% {
+		top: 100%;
+		animation-timing-function: ease-in;
+	}
+
+	100% {
+		top: 50%;
+		animation-timing-function: ease-out;
+	}
+}
+
+.name:hover::after {
+  white-space: pre;
+  content: "";
+  position: relative;
+  top: 1em;
+  left: 0em;
+  z-index: 1;
+  padding: 0.4em;
+  background: #0a7408;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#d-name {
+	display: block;
+	transition: 1s ease-in-out;
+}
+
+/* Small viewport */
+@media (min-width: 320px) {
+}
+
+/* Medium viewport */
+@media (min-width: 768px) {
+}
+
+/* Large viewport */
+@media (min-width: 1024px) {
+
+  .carousel {
+    width: 4vw;
+    height: 8vh;
+    margin: 1em auto;
+    position: relative;
+    border-radius: 50%;
+    border: 0px solid #222;
+    transform: skew(180deg);
+  }
+
+  .ovals {
+    margin: 5em auto;
+    width: 682px;
+    height: 528px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .oval-0 {
+    position: absolute;
+    top: 0;
+  }
+  .oval {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  .oval-0 .carousel {
+    width: 75vw;
+    height: 75vh;
+    transform: skew(180deg);
+  }
+
+  .oval-1 .carousel {
+    width: 40em;
+    height: 25em;
+    transform: skew(180deg);
+  }
+
+  .oval-2 .carousel {
+    width: 16em;
+    height: 10em;
+    transform: skew(180deg);
+  }
+
+  .oval-sun .carousel {
+    width: 4em;
+    height: 8em;
+    transform: skew(180deg);
+  }
+
+  .oval .carousel .carousel__item {
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move-x 60s linear infinite, move-y 60s linear infinite;
+    font-size: 1.4rem;
+  }
+
+  .carousel:hover .carousel__item {
+    animation-play-state: none;
+  }
+
+  .oval img {
+    border-radius: 50%;
+    transform: skew(-180deg);
+    width: 4em;
+    height: 4em;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  .carousel__item img:hover + .hide, .carousel__item img:focus-visible + .hide {
+    display: block;
+    color: rgba(240, 240, 240, 0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding-top: 1.2em;
+    transition: 1s ease-in-out;
+    width: 33vw;
+    border-radius: 0.2em;
+  }
+
+  @keyframes move-x {
+    0% {
+      left: 0;
+      animation-timing-function: ease-in;
+    }
+    25% {
+      left: 50%;
+      animation-timing-function: ease-out;
+    }
+    50% {
+      left: 100%;
+      animation-timing-function: ease-in;
+    }
+    75% {
+      left: 50%;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      left: 0%;
+      animation-timing-function: ease-in;
+    }
+  }
+
+  @keyframes move-y {
+    0% {
+      top: 50%;
+      animation-timing-function: ease-out;
+    }
+    25% {
+      top: 0;
+      animation-timing-function: ease-in;
+    }
+    50% {
+      top: 50%;
+      animation-timing-function: ease-out;
+    }
+    75% {
+      top: 100%;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      top: 50%;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+
+/* Extra large viewport */
+@media (min-width: 1920px) {
+
+}
+
+/* Gloed achter de mugshots */
+
+.bm-white {
+  border-radius: 50%;
+  box-shadow: 1px 1px 2em 0px rgba(234, 215, 232, 0.577);
+}
+
+/* Hover voor de titel van studenten */
+.hide {
+  display: none;
+}
+
+/* Focus voor gebruikers die met tab navigeren */
+.carousel__item:focus {
+  outline: none;
+}
+
+.carousel__item:focus img {
+  box-shadow: 1px 1px 2em 0.1em dodgerblue;
+  transform: scale(1.6);
+}
+
+.carousel__item:hover img {
+  box-shadow: 1px 1px 2em 0.1em dodgerblue;
+  transform: scale(1.6);
+}
+
+/* Instellingen om de voor- & achternaam weer te geven */
+.carousel__item img:hover + .hide {
+  display: block;
+  color: rgba(240, 240, 240, 0.8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  padding-top: 1.2em;
+  transition: 1s ease-in-out;
+  width: 33vw;
+  border-radius: 0.2em;
+  outline: none;
+}
+
+.carousel__item:focus img + .hide {
+  display: block;
+  color: rgba(240, 240, 240, 0.8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  padding-top: 1.2em;
+  transition: 1s ease-in-out;
+  width: 33vw;
+  border-radius: 0.2em;
+  outline: none;
+}
+
+/*  */
+
+@import './breakpoint-files/sm-screen.css';
+@import './breakpoint-files/md-screen.css';
+@import './breakpoint-files/lg-screen.css';
+@import './breakpoint-files/xl-screen.css';
+@import './breakpoint-files/xxl-screen.css';

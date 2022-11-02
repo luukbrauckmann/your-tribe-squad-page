@@ -1,4 +1,4 @@
-# Your Tribe - Squad page
+# Squad page
 
 Ontwerp en maak met je squad een squadpagina met HTML, CSS en Javascript.
 
