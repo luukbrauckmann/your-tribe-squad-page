@@ -12,7 +12,7 @@ function onInit() {
  * Relative file path: ../assets/squad.json
  */
 function getSquad() {
-	fetch('../assets/squad.json')
+	fetch('./assets/squad.json')
 		.then((response) => response.json())
 		.then((data) => {
 			squad = data
