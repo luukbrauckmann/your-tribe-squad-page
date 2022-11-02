@@ -6,111 +6,117 @@
 		"animationDelay": "0s"
 	},
 	{
+		"name": "Maika Nguyen",
+		"pageUrl": "https://maikangn.github.io/your-tribe-profile-card/",
+		"imgUrl": "../assets/squad-c/maika-nguyen.png",
+		"animationDelay": "-6s"
+	},
+	{
 		"name": "Amir Amerian",
 		"pageUrl": "https://amirdev98.github.io/your-tribe-profile-card/",
 		"imgUrl": "../assets/squad-c/amir-amerian.png",
-		"animationDelay": "-7s"
+		"animationDelay": "-12s"
 	},
 	{
 		"name": "Amber van der Reijden",
 		"pageUrl": "https://amberhva.github.io/your-tribe-profile-card-Copy/",
 		"imgUrl": "../assets/squad-c/amber-vd-reijden.png",
-		"animationDelay": "-15s"
+		"animationDelay": "-18s"
 	},
 	{
 		"name": "Daan Carstens",
 		"pageUrl": "https://daancarst.github.io/your-tribe-profile-card-main/",
 		"imgUrl": "../assets/squad-c/daan-carstens.png",
-		"animationDelay": "-22.5s"
+		"animationDelay": "-24s"
 	},
 	{
 		"name": "Elina Kniazian",
-		"pageUrl": "",
+		"pageUrl": "https://learn.about.elina.student.fdnd.nl/",
 		"imgUrl": "../assets/squad-c/elina-kniazian.png",
 		"animationDelay": "-30s"
 	},
 	{
 		"name": "Fatih Guler",
-		"pageUrl": "",
+		"pageUrl": "https://fatihg61.github.io/your-tribe-profile-card/",
 		"imgUrl": "../assets/squad-c/fatih-guler.png",
-		"animationDelay": "-37.5s"
+		"animationDelay": "-36s"
 	},
 	{
 		"name": "Merel Balk",
 		"pageUrl": "https://merpderp36.github.io/your-tribe-profile-card/",
 		"imgUrl": "../assets/squad-c/merel-balk.png",
-		"animationDelay": "-52.5s"
+		"animationDelay": "-42s"
 	},
 	{
 		"name": "Rick Vellinga",
 		"pageUrl": "https://rickvellingaa.github.io/your-tribe-profile-card/",
 		"imgUrl": "../assets/squad-c/rick-vellinga.png",
-		"animationDelay": "-5s"
+		"animationDelay": "-48s"
 	},
 	{
 		"name": "Roelie Jansen",
 		"pageUrl": "https://roelie.student.fdnd.nl/versie2/",
 		"imgUrl": "../assets/squad-c/roelie-jansen.png",
-		"animationDelay": "-19s"
+		"animationDelay": "-54s"
 	},
 	{
 		"name": "Siem Postmus",
 		"pageUrl": "https://siem.student.fdnd.nl/",
 		"imgUrl": "../assets/squad-c/siem-postmus.png",
-		"animationDelay": "-25s"
+		"animationDelay": "-3s"
 	},
 	{
 		"name": "Tessa Viergever",
 		"pageUrl": "https://tessaviergever.student.fdnd.nl/",
 		"imgUrl": "../assets/squad-c/tessa-viergever.png",
-		"animationDelay": "-45s"
+		"animationDelay": "-12s"
 	},
 	{
 		"name": "Tristan de Muijnck",
 		"pageUrl": "https://tristan.student.fdnd.nl/",
 		"imgUrl": "../assets/squad-c/tristan-de-muijnck.png",
-		"animationDelay": "-10s"
+		"animationDelay": "-18s"
 	},
 	{
 		"name": "Zenit Araya",
-		"pageUrl": "",
+		"pageUrl": "https://zenitba.github.io/profile-card-zenit/",
 		"imgUrl": "../assets/squad-c/zenit-araya.png",
-		"animationDelay": "-30s"
+		"animationDelay": "-28s"
 	},
 	{
 		"name": "Luuk Brauckmann",
 		"pageUrl": "https://luukbrauckmann.student.fdnd.nl/",
 		"imgUrl": "../assets/squad-c/luuk-brauckmann.png",
-		"animationDelay": "-37s"
+		"animationDelay": "-40s"
+	},
+	{
+		"name": "Michelle Hendriks",
+		"pageUrl": "http://profile.card.michelle.student.fdnd.nl/",
+		"imgUrl": "../assets/squad-c/michelle-hendriks.png",
+		"animationDelay": "-48s"
 	},
 	{
 		"name": "Fouad Taissate",
-		"pageUrl": "",
+		"pageUrl": "https://fouad.student.fdnd.nl",
 		"imgUrl": "../assets/squad-c/fouad-taissate.png",
-		"animationDelay": "-37s"
+		"animationDelay": "-40s"
 	},
 	{
 		"name": "Jalal Toufik",
-		"pageUrl": "",
+		"pageUrl": "https://jalal.student.fdnd.nl/",
 		"imgUrl": "../assets/squad-c/jalal-toufik.png",
-		"animationDelay": "-11s"
-	},
-	{
-		"name": "Maika Nguyen",
-		"pageUrl": "",
-		"imgUrl": "../assets/squad-c/maika-nguyen.png",
-		"animationDelay": "-15s"
+		"animationDelay": "-0s"
 	},
 	{
 		"name": "Mokhtar Akle",
-		"pageUrl": "",
+		"pageUrl": "https://mokhtarakle.github.io/your-tribe-profile-card/",
 		"imgUrl": "../assets/squad-c/mokhtar-akle.png",
-		"animationDelay": "-25s"
+		"animationDelay": "-20s"
 	},
 	{
 		"name": "Olivier Griep",
-		"pageUrl": "",
+		"pageUrl": "https://olivergriep.student.fdnd.nl/versie2/",
 		"imgUrl": "../assets/squad-c/olivier-griep.png",
-		"animationDelay": "-45s"
+		"animationDelay": "-40s"
 	}
 ]
