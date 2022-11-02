@@ -27,7 +27,7 @@ Squadpage, is een overzichtspagina voor Squad C. De webpagina is een carousel in
 
 ## Handige links
 
-[Link naar live](https://testmilu.student.fdnd.nl/)
+[Link naar live](https://luukbrauckmann.github.io/your-tribe-squad-page/)
 
 ### Links voor collaborators
 [Miro board](https://miro.com/welcomeonboard/QU9HeTF5OWxYUlhkYlREZTFMSDYxa3VZdUd4OExYVWZJdGdGUlh5OUNlczM3dlQyejRwVnB4UlNQSDhQM2JyaHwzNDU4NzY0NTMzMDY3NjQyODY5?share_link_id=330823329398)
